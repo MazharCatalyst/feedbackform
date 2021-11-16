@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style2.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pt-5 text-center">
+                <!-- Button trigger modal -->
+                <div class="popup-btn">
+                    <button type="button"  data-toggle="modal" data-target="#exampleModal">
+                        Feedback
+                    </button>
+                </div>
+                <div class="modal fade" id="exampleModal" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Your feedback</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row  pb-2">
+                                    <div class="col-12 text-left">
+                                        We would like your feedback to improve our website.
+                                    </div>
+                                </div>
+                                <div class="row text-center pb-2">
+                                    <div class="col-12">
+                                        What is your opinion of this page ?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12" id="emojis">
+
+                                        <div class="d-flex justify-content-center">
+                                            <div class="p-2">
+                                                <label for="0">
+                                                    <input class="radio" type="radio" name="feedback" id="0" value="0">
+                                                    <img id="img0" src="img/Angry-64.png" alt="Angry" />
+                                                    <div id="angry" style="display:none;" class="text-center">Angry</div>
+                                                </label>
+                                            </div>
+                                            <div class="p-2">
+                                                <label for="1">
+                                                    <input class="radio" type="radio" name="feedback" id="1" value="1">
+                                                    <img id="img1" src="img/Sad-64.png" alt="Sad" />
+                                                    <div id="sad" style="display:none;" class="text-center">Sad</div>
+                                                </label>
+                                            </div>
+                                            <div class="p-2">
+                                                <label for="2">
+                                                    <input class="radio" type="radio" name="feedback" id="2" value="2">
+                                                    <img id="img2" src="img/Neutral-64.png" alt="Neutral" />
+                                                    <div id="neutral" style="display:none;" class="text-center">Neutral</div>
+                                                </label>
+                                            </div>
+                                            <div class="p-2">
+                                                <label for="3">
+                                                    <input class="radio" type="radio" name="feedback" id="3" value="3">
+                                                    <img id="img3" src="img/Happy-64.png" alt="Happy" />
+                                                    <div id="happy" style="display:none;" class="text-center">Happy</div>
+                                                </label>
+                                            </div>
+                                            <div class="p-2">
+                                                <label for="4">
+                                                    <input class="radio" type="radio" name="feedback" id="4" value="4">
+                                                    <img id="img4" src="img/Very-Happy-64.png" alt="Very Happy" />
+                                                    <div id="veryhappy" style="display:none;" class="text-center">Very <br /> Happy</div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-12 ">
+                                        <div class="borderline"> &nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-12">
+                                        Please select your feedback category.
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-12" id="btncategories">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="radiobtn-toolbar">
+
+                                                <input type="radio" name="btncategory" id="5" value="5">
+                                                <label for="5" id="bug" class="text-center">Bug</label>
+
+
+
+                                                <input type="radio" name="btncategory" id="6" value="6">
+                                                <label for="6" id="suggestion" class="text-center">Suggestion</label>
+
+
+
+                                                <input type="radio" name="btncategory" id="7" value="7">
+                                                <label for="7" id="other" class="text-center">Other</label>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-12 ">
+                                        <div class="borderline"> &nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-12">
+                                        Please give your feedback below.
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-2">
+                                    <div class="col-12">
+                                        <textarea id="txtfeedback" class="text-areastyle"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Try It!</button>
+                            </div>
+							<div><input type="radio"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            jQuery("#emojis input[name='feedback']").click(function () {
+                $("#angry").css("display", "none");
+                $("#sad").css("display", "none");
+                $("#neutral").css("display", "none");
+                $("#happy").css("display", "none");
+                $("#veryhappy").css("display", "none");
+				
+				$("#img0").attr('src','img/Angry-64.png');
+				$("#img1").attr('src','img/Sad-64.png');
+				$("#img2").attr('src','img/Neutral-64.png');
+				$("#img3").attr('src','img/Happy-64.png');
+				$("#img4").attr('src','img/Very-Happy-64.png');
+				
+
+                const iselected = $('input:radio[name=feedback]:checked').val();
+
+                switch (Number(iselected)) {
+                    case 0:
+                        $("#angry").css("display", "block");
+						$("#img0").attr('src','img/Angry-64-hover.png');
+						
+                        break;
+
+                    case 1:
+                        $("#sad").css("display", "block");
+						$("#img1").attr('src','img/Sad-64-hover.png');
+                        break;
+
+                    case 2:
+                        $("#neutral").css("display", "block");
+						$("#img2").attr('src','img/Neutral-64-hover.png');
+                        break;
+
+                    case 3:
+                        $("#happy").css("display", "block");
+						$("#img3").attr('src','img/Happy-64-hover.png');
+                        break;
+
+                    case 4:
+                        $("#veryhappy").css("display", "block");
+						$("#img4").attr('src','img/Very-Happy-64-hover.png');
+                        break;
+
+                }
+            });
+
+            jQuery("#btncategories input[name='btncategory']").click(function () {
+
+                const iselected1 = $('input:radio[name=btncategory]:checked').val();
+
+            });
+
+        });
+    </script>
+</body>
+</html>
