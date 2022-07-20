@@ -6,6 +6,7 @@ Feedback HTML form
 3. Click on Feedback button on right side of the page.
 4. Bootstrap modal will open with feedback form design.
 
+Check feedback emoji demo.gif for better idea. 
 
 Thanks,
 Mazhar
